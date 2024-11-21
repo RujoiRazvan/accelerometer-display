@@ -5,6 +5,8 @@
  *      Author: razva
  */
 #include "accelerometer.h"
+#include <string.h>
+#include <stdio.h>
 
 void accelerometer_init()
 {
