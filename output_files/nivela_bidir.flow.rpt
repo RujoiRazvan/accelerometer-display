@@ -1,0 +1,132 @@
+Flow report for nivela_bidir
+Thu Nov 21 14:12:36 2024
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Flow Summary                                                                        ;
++------------------------------------+------------------------------------------------+
+; Flow Status                        ; Successful - Thu Nov 21 14:12:36 2024          ;
+; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                      ; nivela_bidir                                   ;
+; Top-level Entity Name              ; DE10_LITE_Golden_Top                           ;
+; Family                             ; MAX 10                                         ;
+; Device                             ; 10M50DAF484C6GES                               ;
+; Timing Models                      ; Preliminary                                    ;
+; Total logic elements               ; 3,350 / 49,760 ( 7 % )                         ;
+;     Total combinational functions  ; 2,981 / 49,760 ( 6 % )                         ;
+;     Dedicated logic registers      ; 1,969 / 49,760 ( 4 % )                         ;
+; Total registers                    ; 1969                                           ;
+; Total pins                         ; 185 / 360 ( 51 % )                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 1,060,352 / 1,677,312 ( 63 % )                 ;
+; Embedded Multiplier 9-bit elements ; 6 / 288 ( 2 % )                                ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                  ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                                  ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                                  ;
++------------------------------------+------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/21/2024 14:11:17 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; nivela_bidir        ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                             ;
++-------------------------------------+--------------------------------------------------------------------+---------------+----------------------+------------+
+; Assignment Name                     ; Value                                                              ; Default Value ; Entity Name          ; Section Id ;
++-------------------------------------+--------------------------------------------------------------------+---------------+----------------------+------------+
+; COMPILER_SIGNATURE_ID               ; 9447190458696.173219107719424                                      ; --            ; --                   ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                 ; --            ; --                   ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                  ; --            ; --                   ; --         ;
+; MISC_FILE                           ; cpu_system_nios2/synthesis/../cpu_system_nios2.cmp                 ; --            ; --                   ; --         ;
+; MISC_FILE                           ; cpu_system_nios2/synthesis/../../cpu_system_nios2.qsys             ; --            ; --                   ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                             ; --            ; DE10_LITE_Golden_Top ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                             ; --            ; DE10_LITE_Golden_Top ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                             ; --            ; DE10_LITE_Golden_Top ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                ; --            ; --                   ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                              ; --            ; --                   ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                       ; --            ; --                   ; --         ;
+; SLD_FILE                            ; cpu_system_nios2/synthesis/cpu_system_nios2.regmap                 ; --            ; --                   ; --         ;
+; SLD_FILE                            ; cpu_system_nios2/synthesis/cpu_system_nios2.debuginfo              ; --            ; --                   ; --         ;
+; SLD_INFO                            ; QSYS_NAME cpu_system_nios2 HAS_SOPCINFO 1 GENERATION_ID 1732141602 ; --            ; cpu_system_nios2     ; --         ;
+; SOPCINFO_FILE                       ; cpu_system_nios2/synthesis/../../cpu_system_nios2.sopcinfo         ; --            ; --                   ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --                   ; --         ;
+; TOP_LEVEL_ENTITY                    ; DE10_LITE_Golden_Top                                               ; nivela_bidir  ; --                   ; --         ;
++-------------------------------------+--------------------------------------------------------------------+---------------+----------------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:34     ; 1.0                     ; 5005 MB             ; 00:00:57                           ;
+; Fitter               ; 00:00:35     ; 1.4                     ; 5856 MB             ; 00:00:57                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4746 MB             ; 00:00:03                           ;
+; Total                ; 00:01:12     ; --                      ; --                  ; 00:01:57                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; RazvanPC         ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; RazvanPC         ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; RazvanPC         ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off nivela_bidir -c nivela_bidir
+quartus_fit --read_settings_files=off --write_settings_files=off nivela_bidir -c nivela_bidir
+quartus_asm --read_settings_files=off --write_settings_files=off nivela_bidir -c nivela_bidir
+
+
+
