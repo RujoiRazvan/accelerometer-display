@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'cpu_system_nios2'
  * SOPC Builder design path: N:/Facultate/Master/Master_2/PASIC/nivela_bidir/nivela_bidir/cpu_system_nios2.sopcinfo
  *
- * Generated: Thu Nov 21 00:32:19 EET 2024
+ * Generated: Fri Nov 22 21:36:39 EET 2024
  */
 
 /*
@@ -456,7 +456,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1732141602
+#define SYSID_QSYS_0_TIMESTAMP 1732203005
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */
