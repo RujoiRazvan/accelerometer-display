@@ -143,10 +143,11 @@ cpu_system_nios2 u0 (
 	.hex_2_external_connection_export              (HEX2			 ),              //              hex_2_external_connection.export
 	.hex_3_external_connection_export              (HEX3			 ),              //              hex_3_external_connection.export
 	.hex_4_external_connection_export              (HEX4			 ),              //              hex_4_external_connection.export
-	.sw_0_external_connection_export               (SW			    )               //               sw_0_external_connection.export
+	.sw_0_external_connection_export               (SW			    ),               //               sw_0_external_connection.export
+	.accelerometer_spi_0_external_interface_I2C_SDAT      (GSENSOR_SDI),      // accelerometer_spi_0_external_interface.I2C_SDAT
+   .accelerometer_spi_0_external_interface_I2C_SCLK      (GSENSOR_SCLK),      //                                       .I2C_SCLK
+   .accelerometer_spi_0_external_interface_G_SENSOR_CS_N (GSENSOR_CS_N), //                                       .G_SENSOR_CS_N
+   .accelerometer_spi_0_external_interface_G_SENSOR_INT  (GSENSOR_INT[1])  //                                       .G_SENSOR_INT
+	
 );
-
-
-
-
 endmodule
