@@ -1,4 +1,5 @@
 #include "hex_displays.h"
+#include "accelerometer.h"
 #include <system.h>
 #include <altera_avalon_pio_regs.h>
 
@@ -12,6 +13,7 @@ int main()
 {
 	printf("Program start\r\n");
 	hex_init(TURN_OFF);
+	accelerometer_init();
 	while(1)
 	{
 	}
