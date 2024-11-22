@@ -8,10 +8,15 @@
 #ifndef ACCELEROMETER_H_
 #define ACCELEROMETER_H_
 
+#include "global.h"
 #include <altera_up_avalon_accelerometer_spi.h>
 
-void accelerometer_init(alt_up_accelerometer_spi_dev* accelerometer_device, const char* device_name);
-
 void read_ADXL345_deviceID (alt_up_accelerometer_spi_dev *accelerometer_dev);
+
+void print_accelerometer_axis(alt_up_accelerometer_spi_dev *accelerometer_dev);
+
+int get_x_value ();
+
+int get_y_value ();
 
 #endif /* ACCELEROMETER_H_ */

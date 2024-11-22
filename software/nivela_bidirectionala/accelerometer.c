@@ -5,27 +5,29 @@
  *      Author: razva
  */
 #include "accelerometer.h"
-#include <string.h>
-#include <stdio.h>
-
-void accelerometer_init(alt_up_accelerometer_spi_dev* accelerometer_device, const char* device_name)
-{
-	accelerometer_device = alt_up_accelerometer_spi_open_dev(device_name);
-	if(accelerometer_device != NULL)
-		printf("Device found %s\r\n", device_name);
-	else
-		printf("Device not found %s \r\n", device_name);
-}
 
 void read_ADXL345_deviceID (alt_up_accelerometer_spi_dev *accelerometer_dev)
 {
-    uint32_t device_id_address = 0x00;	// Device ID address
+    alt_u32 device_id_address = 0x00;	// Accelerometer ID address
     alt_u8 data = 0;
 
     int error = alt_up_accelerometer_spi_read(accelerometer_dev, device_id_address, &data);
 
     if (!error)
     {
-        printf("Device ID is: 0x%X", data);
+        printf("Accelerometer ID: 0x%X", data);
     }
+    else
+    	printf("Wrong Accelerometer ID\r\n");
+}
+
+void print_accelerometer_axis(alt_up_accelerometer_spi_dev *accelerometer_dev)
+{
+	alt_32 x = 0;
+	alt_32 y = 0;
+	alt_32 z = 0;
+	alt_up_accelerometer_spi_read_x_axis(accelerometer_dev, &x);
+	alt_up_accelerometer_spi_read_y_axis(accelerometer_dev, &y);
+	alt_up_accelerometer_spi_read_z_axis(accelerometer_dev, &z);
+	printf("x: %d, y: %d, z: %d \r\n", x, y, z);
 }
