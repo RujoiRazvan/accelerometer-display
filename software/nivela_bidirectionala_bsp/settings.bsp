@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Nov 22, 2024 9:36:39 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1732304199056</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Nov 22, 2024 11:41:18 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1732311678920</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>N:\Facultate\Master\Master_2\PASIC\nivela_bidir\nivela_bidir\software\nivela_bidirectionala_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>N:\Facultate\Master\Master_2\PASIC\nivela_bidir\nivela_bidir\cpu_system_nios2.sopcinfo</SopcDesignFile>
