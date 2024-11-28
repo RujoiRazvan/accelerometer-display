@@ -15,8 +15,4 @@ void read_ADXL345_deviceID (alt_up_accelerometer_spi_dev *accelerometer_dev);
 
 void print_accelerometer_axis(alt_up_accelerometer_spi_dev *accelerometer_dev);
 
-int get_x_value ();
-
-int get_y_value ();
-
 #endif /* ACCELEROMETER_H_ */
