@@ -13,15 +13,8 @@ void hex_init (uint32_t hexState)
 	}
 }
 
-void set_hex_circle (alt_u8 position, alt_u8 hex_index) {
-	if (position)
-	{
-		IOWR_ALTERA_AVALON_PIO_DATA(get_hex_address(hex_index), TURN_ON_UP_LEDS);
-	}
-	else
-	{
-		IOWR_ALTERA_AVALON_PIO_DATA(get_hex_address(hex_index), TURN_ON_DOWN_LEDS);
-	}
+void set_hex_value (alt_u8 value, alt_u8 hex_index) {
+	IOWR_ALTERA_AVALON_PIO_DATA(get_hex_address(hex_index), value);
 }
 
 void set_hex_state (alt_u8 state, alt_u8 hex_index)
