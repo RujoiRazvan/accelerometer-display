@@ -1073,7 +1073,7 @@ int main()
    203a4:	01003fc4 	movi	r4,255
    203a8:	00204640 	call	20464 <hex_init>
 
-	accelerometer_device = alt_up_accelerometer_spi_open_dev("/dev/accelerometer_spi_0");
+	accelerometer_device = alt_up_accelerometer_spi_open_dev(ACCELEROMETER_SPI_0_NAME);
    203ac:	010000f4 	movhi	r4,3
    203b0:	2100b404 	addi	r4,r4,720
    203b4:	002ee040 	call	2ee04 <alt_up_accelerometer_spi_open_dev>
