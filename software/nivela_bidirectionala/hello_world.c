@@ -12,7 +12,7 @@ int main()
 	printf("Program start\r\n");
 	hex_init(TURN_OFF);
 
-	accelerometer_device = alt_up_accelerometer_spi_open_dev("/dev/accelerometer_spi_0");
+	accelerometer_device = alt_up_accelerometer_spi_open_dev(ACCELEROMETER_SPI_0_NAME);
 	read_ADXL345_deviceID(accelerometer_device);
 
 	alt_32 y;
