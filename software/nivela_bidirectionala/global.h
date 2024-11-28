@@ -19,6 +19,8 @@
 #define TURN_ON_UP_LEDS ~0x63
 #define TURN_ON_DOWN_LEDS ~0x5C
 
+#define TURN_ON_MIDDLE_LINE 0xBF
+
 #define UP_LEDS 1
 #define DOWN_LEDS 0
 
