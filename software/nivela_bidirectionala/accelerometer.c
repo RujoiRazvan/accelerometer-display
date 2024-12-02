@@ -31,3 +31,16 @@ void print_accelerometer_axis(alt_up_accelerometer_spi_dev *accelerometer_dev)
 	alt_up_accelerometer_spi_read_z_axis(accelerometer_dev, &z);
 	printf("x: %d, y: %d, z: %d \r\n", x, y, z);
 }
+
+int hysteresis(int current_value, int *state) {
+    if (*state == 0 && current_value > UPPER_THRESHOLD) {
+        *state = 1;
+    } else if (*state == 1 && current_value < LOWER_THRESHOLD) {
+        *state = 0;
+    } else if (*state == 0 && current_value < NEG_LOWER_THRESHOLD) {
+        *state = -1;
+    } else if (*state == -1 && current_value > NEG_UPPER_THRESHOLD) {
+        *state = 0;
+    }
+    return *state;
+}
