@@ -1,0 +1,4 @@
+db/
+eclipse_ws/
+**/db/
+**/eclipse_ws/
