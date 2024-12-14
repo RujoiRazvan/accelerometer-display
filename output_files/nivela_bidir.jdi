@@ -1,9 +1,9 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="5adf3fcd37fb7c00d54b"/>
+    <hash md5_digest_80b="5380a0d3072e590cd04b"/>
   </project>
   <file_info>
-    <file device="10M50DAF484C6GES" path="nivela_bidir_time_limited.sof" usercode="0xFFFFFFFF"/>
+    <file device="10M50DAF484C7G" path="nivela_bidir_time_limited.sof" usercode="0xFFFFFFFF"/>
   </file_info>
   <hub_info hub_ir_width="5" ir_width="2" node_addr_width="2" node_count="3"/>
   <node_info>
@@ -140,7 +140,7 @@
   <sld_infos>
     <sld_info hpath="cpu_system_nios2:u0" name="u0">
       <assignment_values>
-        <assignment_value text="QSYS_NAME cpu_system_nios2 HAS_SOPCINFO 1 GENERATION_ID 1732203005"/>
+        <assignment_value text="QSYS_NAME cpu_system_nios2 HAS_SOPCINFO 1 GENERATION_ID 1734204014"/>
       </assignment_values>
       <parameters/>
     </sld_info>

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484ES) Path("N:/Facultate/Master/Master_2/PASIC/nivela_bidir/nivela_bidir/output_files/") File("nivela_bidir_time_limited.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("N:/Facultate/Master/Master_2/PASIC/nivela_bidir/nivela_bidir/output_files/") File("nivela_bidir_time_limited.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
