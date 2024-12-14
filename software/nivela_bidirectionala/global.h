@@ -10,8 +10,11 @@
 
 #include <string.h>
 #include <stdio.h>
-#include <altera_up_avalon_accelerometer_spi.h>
 #include <system.h>
+#include <unistd.h>
+#include <altera_up_avalon_accelerometer_spi.h>
+#include <altera_up_avalon_adc.h>
+
 
 #define HEX_BASE_ADDR  HEX_0_BASE
 #define HEX_OFFSET     0x10
