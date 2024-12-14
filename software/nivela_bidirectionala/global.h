@@ -30,10 +30,7 @@
 #define TURN_OFF 0xFF
 #define TURN_ON 0x80	// Do not turn on DP
 
-#define y_inclination 120
-#define UPPER_THRESHOLD y_inclination
-#define LOWER_THRESHOLD (y_inclination - 10)
-#define NEG_LOWER_THRESHOLD -y_inclination
-#define NEG_UPPER_THRESHOLD -(y_inclination - 10)
+#define HYSTERESIS_THRESHOLD 20
+#define Y_INCLINATION 50
 
 #endif /* GLOBAL_H_ */
