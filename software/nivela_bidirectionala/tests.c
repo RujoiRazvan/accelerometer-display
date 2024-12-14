@@ -11,13 +11,13 @@ void test_hex_displays()
 {
 	for(int i = 0; i < 6; i++)
 	{
-		set_hex_circle(1, i);
+		set_hex_value(1, i);
 		for(int j = 0; j < 1000000; j++)
 			;
 	}
 	for(int i = 0; i < 6; i++)
 		{
-			set_hex_circle(0, i);
+			set_hex_value(0, i);
 			for(int j = 0; j < 1000000; j++)
 				;
 		}
