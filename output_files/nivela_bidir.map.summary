@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Fri Nov 22 21:35:20 2024
+Analysis & Synthesis Status : Successful - Sat Dec 14 21:49:21 2024
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : nivela_bidir
 Top-level Entity Name : DE10_LITE_Golden_Top
 Family : MAX 10
-Total logic elements : 3,619
-    Total combinational functions : 2,990
-    Dedicated logic registers : 2,046
-Total registers : 2046
-Total pins : 185
+Total logic elements : 4,024
+    Total combinational functions : 3,223
+    Dedicated logic registers : 2,325
+Total registers : 2325
+Total pins : 186
 Total virtual pins : 0
-Total memory bits : 1,060,352
+Total memory bits : 1,061,120
 Embedded Multiplier 9-bit elements : 6
-Total PLLs : 0
+Total PLLs : 1
 UFM blocks : 0
-ADC blocks : 0
+ADC blocks : 1

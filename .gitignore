@@ -1,0 +1,10 @@
+db/
+eclipse_ws/
+incremental_db
+software/nivela_bidirectionala/obj/
+software/nivela_bidirectionala_bsp/obj/
+**/db/
+**/eclipse_ws/
+**/incremental_db/
+**/nivela_bidirectionala/obj/
+**/nivela_bidirectionala_bsp/obj/

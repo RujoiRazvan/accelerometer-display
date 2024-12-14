@@ -90,11 +90,12 @@ ACDS_VERSION := 22.1
 ELF := nivela_bidirectionala.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += hello_world.c
 C_SRCS += hex_displays.c
 C_SRCS += accelerometer.c
 C_SRCS += tests.c
 C_SRCS += global.c
+C_SRCS += adc.c
+C_SRCS += main.c
 CXX_SRCS :=
 ASM_SRCS :=
 

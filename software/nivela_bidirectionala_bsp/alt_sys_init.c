@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'cpu_system_nios2'
  * SOPC Builder design path: N:/Facultate/Master/Master_2/PASIC/nivela_bidir/nivela_bidir/cpu_system_nios2.sopcinfo
  *
- * Generated: Fri Nov 22 23:41:19 EET 2024
+ * Generated: Sat Dec 14 22:14:45 EET 2024
  */
 
 /*
@@ -62,6 +62,7 @@
 #include "altera_avalon_jtag_uart.h"
 #include "altera_avalon_sysid_qsys.h"
 #include "altera_up_avalon_accelerometer_spi.h"
+#include "altera_up_avalon_adc.h"
 
 /*
  * Allocate the device storage
@@ -71,6 +72,7 @@ ALTERA_NIOS2_GEN2_IRQ_INSTANCE ( NIOS2_GEN2_0, nios2_gen2_0);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART_0, jtag_uart_0);
 ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID_QSYS_0, sysid_qsys_0);
 ALTERA_UP_AVALON_ACCELEROMETER_SPI_INSTANCE ( ACCELEROMETER_SPI_0, accelerometer_spi_0);
+ALTERA_UP_AVALON_ADC_INSTANCE ( ADC_0, adc_0);
 
 /*
  * Initialize the interrupt controller devices
@@ -96,4 +98,5 @@ void alt_sys_init( void )
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_0, jtag_uart_0);
     ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID_QSYS_0, sysid_qsys_0);
     ALTERA_UP_AVALON_ACCELEROMETER_SPI_INIT ( ACCELEROMETER_SPI_0, accelerometer_spi_0);
+    ALTERA_UP_AVALON_ADC_INIT ( ADC_0, adc_0);
 }
