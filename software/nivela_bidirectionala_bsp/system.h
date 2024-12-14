@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'cpu_system_nios2'
  * SOPC Builder design path: N:/Facultate/Master/Master_2/PASIC/nivela_bidir/nivela_bidir/cpu_system_nios2.sopcinfo
  *
- * Generated: Fri Nov 22 23:41:19 EET 2024
+ * Generated: Sat Dec 14 22:14:45 EET 2024
  */
 
 /*
@@ -143,6 +143,7 @@
 #define __ALTERA_AVALON_SYSID_QSYS
 #define __ALTERA_NIOS2_GEN2
 #define __ALTERA_UP_AVALON_ACCELEROMETER_SPI
+#define __ALTERA_UP_AVALON_ADC
 
 
 /*
@@ -161,19 +162,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x41078
+#define ALT_STDERR_BASE 0x41008
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x41078
+#define ALT_STDIN_BASE 0x41008
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x41078
+#define ALT_STDOUT_BASE 0x41008
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -188,13 +189,27 @@
  *
  */
 
-#define ACCELEROMETER_SPI_0_BASE 0x41080
+#define ACCELEROMETER_SPI_0_BASE 0x41070
 #define ACCELEROMETER_SPI_0_IRQ 1
 #define ACCELEROMETER_SPI_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define ACCELEROMETER_SPI_0_NAME "/dev/accelerometer_spi_0"
 #define ACCELEROMETER_SPI_0_SPAN 2
 #define ACCELEROMETER_SPI_0_TYPE "altera_up_avalon_accelerometer_spi"
 #define ALT_MODULE_CLASS_accelerometer_spi_0 altera_up_avalon_accelerometer_spi
+
+
+/*
+ * adc_0 configuration
+ *
+ */
+
+#define ADC_0_BASE 0x410a0
+#define ADC_0_IRQ -1
+#define ADC_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define ADC_0_NAME "/dev/adc_0"
+#define ADC_0_SPAN 32
+#define ADC_0_TYPE "altera_up_avalon_adc"
+#define ALT_MODULE_CLASS_adc_0 altera_up_avalon_adc
 
 
 /*
@@ -376,7 +391,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x41078
+#define JTAG_UART_0_BASE 0x41008
 #define JTAG_UART_0_IRQ 0
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -423,7 +438,7 @@
  */
 
 #define ALT_MODULE_CLASS_sw_0 altera_avalon_pio
-#define SW_0_BASE 0x41000
+#define SW_0_BASE 0x41080
 #define SW_0_BIT_CLEARING_EDGE_REGISTER 0
 #define SW_0_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define SW_0_CAPTURE 0
@@ -450,13 +465,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
-#define SYSID_QSYS_0_BASE 0x41070
+#define SYSID_QSYS_0_BASE 0x41000
 #define SYSID_QSYS_0_ID -559038737
 #define SYSID_QSYS_0_IRQ -1
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1732203005
+#define SYSID_QSYS_0_TIMESTAMP 1734204014
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */

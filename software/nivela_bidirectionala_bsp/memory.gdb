@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'cpu_system_nios2'
 # SOPC Builder design path: N:/Facultate/Master/Master_2/PASIC/nivela_bidir/nivela_bidir/cpu_system_nios2.sopcinfo
 #
-# Generated: Fri Nov 22 23:41:19 EET 2024
+# Generated: Sat Dec 14 22:14:46 EET 2024
 
 # DO NOT MODIFY THIS FILE
 #
