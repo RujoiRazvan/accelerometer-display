@@ -15,6 +15,6 @@ void read_ADXL345_deviceID (alt_up_accelerometer_spi_dev *accelerometer_dev);
 
 void print_accelerometer_axis(alt_up_accelerometer_spi_dev *accelerometer_dev);
 
-int hysteresis(int current_value, int *state);
+int applyHysteresis(int current_value, int previous_value, int threshold);
 
 #endif /* ACCELEROMETER_H_ */

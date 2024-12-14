@@ -32,15 +32,11 @@ void print_accelerometer_axis(alt_up_accelerometer_spi_dev *accelerometer_dev)
 	printf("x: %d, y: %d, z: %d \r\n", x, y, z);
 }
 
-int hysteresis(int current_value, int *state) {
-    if (*state == 0 && current_value > UPPER_THRESHOLD) {
-        *state = 1;
-    } else if (*state == 1 && current_value < LOWER_THRESHOLD) {
-        *state = 0;
-    } else if (*state == 0 && current_value < NEG_LOWER_THRESHOLD) {
-        *state = -1;
-    } else if (*state == -1 && current_value > NEG_UPPER_THRESHOLD) {
-        *state = 0;
+int applyHysteresis(int current_value, int previous_value, int threshold)
+{
+    if (abs(current_value - previous_value) > threshold) {
+        return current_value;
+    } else {
+        return previous_value;
     }
-    return *state;
 }
