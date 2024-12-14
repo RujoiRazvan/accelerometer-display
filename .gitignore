@@ -1,4 +1,6 @@
 db/
 eclipse_ws/
+incremental_db
 **/db/
 **/eclipse_ws/
+**/incremental_db/
