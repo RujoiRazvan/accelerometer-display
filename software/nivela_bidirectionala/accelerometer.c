@@ -40,3 +40,9 @@ int applyHysteresis(int current_value, int previous_value, int threshold)
         return previous_value;
     }
 }
+
+void CalibrateSensor(alt_up_accelerometer_spi_dev *accelerometer_dev, alt_32 *xOffset, alt_32 *yOffset)
+{
+	alt_up_accelerometer_spi_read_x_axis(accelerometer_dev, xOffset);
+	alt_up_accelerometer_spi_read_y_axis(accelerometer_dev, yOffset);
+}

@@ -17,4 +17,6 @@ void print_accelerometer_axis(alt_up_accelerometer_spi_dev *accelerometer_dev);
 
 int applyHysteresis(int current_value, int previous_value, int threshold);
 
+void CalibrateSensor(alt_up_accelerometer_spi_dev *accelerometer_dev, alt_32 *xOffset, alt_32 *yOffset);
+
 #endif /* ACCELEROMETER_H_ */
