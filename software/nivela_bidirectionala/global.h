@@ -33,7 +33,7 @@
 #define TURN_OFF 0xFF
 #define TURN_ON 0x80	// Do not turn on DP
 
-#define HYSTERESIS_THRESHOLD 20
+#define HYSTERESIS_THRESHOLD 30
 #define Y_INCLINATION 50
 
 #endif /* GLOBAL_H_ */
