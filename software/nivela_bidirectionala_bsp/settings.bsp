@@ -2,12 +2,12 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 14, 2024 10:14:45 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1734207285600</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 18, 2024 10:01:44 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1734552104985</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>N:\Facultate\Master\Master_2\PASIC\nivela_bidir\nivela_bidir\software\nivela_bidirectionala_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>N:\Facultate\Master\Master_2\PASIC\nivela_bidir\nivela_bidir\cpu_system_nios2.sopcinfo</SopcDesignFile>
-        <SystemFileHash>5335cee9caae493a32da488533fe827cc55d4f0b7f45e6f3144d2fd9d1ace73</SystemFileHash>
+        <SystemFileHash>f3ea6b6f0e6d5d64f85d28ce51cd3bbbeebc4899d48b64c58caa1ae737</SystemFileHash>
         <JdiFile>default</JdiFile>
         <Cpu>nios2_gen2_0</Cpu>
         <SchemaVersion>1.9</SchemaVersion>
@@ -906,16 +906,10 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x00041000 - 0x00041007</addressRange>
-                <addressSpan>8</addressSpan>
+                <slaveDescriptor>push_0</slaveDescriptor>
+                <addressRange>0x00041000 - 0x0004100F</addressRange>
+                <addressSpan>16</addressSpan>
                 <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x00041008 - 0x0004100F</addressRange>
-                <addressSpan>8</addressSpan>
-                <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>hex_0</slaveDescriptor>
@@ -960,8 +954,20 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
+                <addressRange>0x00041078 - 0x0004107F</addressRange>
+                <addressSpan>8</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>sw_0</slaveDescriptor>
                 <addressRange>0x00041080 - 0x0004108F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sw_1</slaveDescriptor>
+                <addressRange>0x00041090 - 0x0004109F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
@@ -970,6 +976,24 @@
                 <addressRange>0x000410A0 - 0x000410BF</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>led_0</slaveDescriptor>
+                <addressRange>0x000410C0 - 0x000410CF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>led_1</slaveDescriptor>
+                <addressRange>0x000410D0 - 0x000410DF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>jtag_uart_0</slaveDescriptor>
+                <addressRange>0x000410E0 - 0x000410E7</addressRange>
+                <addressSpan>8</addressSpan>
+                <attributes>printable</attributes>
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>

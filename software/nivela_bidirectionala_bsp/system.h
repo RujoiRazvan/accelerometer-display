@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'cpu_system_nios2'
  * SOPC Builder design path: N:/Facultate/Master/Master_2/PASIC/nivela_bidir/nivela_bidir/cpu_system_nios2.sopcinfo
  *
- * Generated: Sat Dec 14 22:14:45 EET 2024
+ * Generated: Wed Dec 18 22:01:45 EET 2024
  */
 
 /*
@@ -162,19 +162,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x41008
+#define ALT_STDERR_BASE 0x410e0
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x41008
+#define ALT_STDIN_BASE 0x410e0
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x41008
+#define ALT_STDOUT_BASE 0x410e0
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -391,7 +391,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x41008
+#define JTAG_UART_0_BASE 0x410e0
 #define JTAG_UART_0_IRQ 0
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -401,6 +401,60 @@
 #define JTAG_UART_0_TYPE "altera_avalon_jtag_uart"
 #define JTAG_UART_0_WRITE_DEPTH 64
 #define JTAG_UART_0_WRITE_THRESHOLD 8
+
+
+/*
+ * led_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_led_0 altera_avalon_pio
+#define LED_0_BASE 0x410c0
+#define LED_0_BIT_CLEARING_EDGE_REGISTER 0
+#define LED_0_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define LED_0_CAPTURE 0
+#define LED_0_DATA_WIDTH 1
+#define LED_0_DO_TEST_BENCH_WIRING 0
+#define LED_0_DRIVEN_SIM_VALUE 0
+#define LED_0_EDGE_TYPE "NONE"
+#define LED_0_FREQ 50000000
+#define LED_0_HAS_IN 0
+#define LED_0_HAS_OUT 1
+#define LED_0_HAS_TRI 0
+#define LED_0_IRQ -1
+#define LED_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define LED_0_IRQ_TYPE "NONE"
+#define LED_0_NAME "/dev/led_0"
+#define LED_0_RESET_VALUE 0
+#define LED_0_SPAN 16
+#define LED_0_TYPE "altera_avalon_pio"
+
+
+/*
+ * led_1 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_led_1 altera_avalon_pio
+#define LED_1_BASE 0x410d0
+#define LED_1_BIT_CLEARING_EDGE_REGISTER 0
+#define LED_1_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define LED_1_CAPTURE 0
+#define LED_1_DATA_WIDTH 1
+#define LED_1_DO_TEST_BENCH_WIRING 0
+#define LED_1_DRIVEN_SIM_VALUE 0
+#define LED_1_EDGE_TYPE "NONE"
+#define LED_1_FREQ 50000000
+#define LED_1_HAS_IN 0
+#define LED_1_HAS_OUT 1
+#define LED_1_HAS_TRI 0
+#define LED_1_IRQ -1
+#define LED_1_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define LED_1_IRQ_TYPE "NONE"
+#define LED_1_NAME "/dev/led_1"
+#define LED_1_RESET_VALUE 0
+#define LED_1_SPAN 16
+#define LED_1_TYPE "altera_avalon_pio"
 
 
 /*
@@ -433,6 +487,33 @@
 
 
 /*
+ * push_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_push_0 altera_avalon_pio
+#define PUSH_0_BASE 0x41000
+#define PUSH_0_BIT_CLEARING_EDGE_REGISTER 0
+#define PUSH_0_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PUSH_0_CAPTURE 0
+#define PUSH_0_DATA_WIDTH 1
+#define PUSH_0_DO_TEST_BENCH_WIRING 0
+#define PUSH_0_DRIVEN_SIM_VALUE 0
+#define PUSH_0_EDGE_TYPE "NONE"
+#define PUSH_0_FREQ 50000000
+#define PUSH_0_HAS_IN 1
+#define PUSH_0_HAS_OUT 0
+#define PUSH_0_HAS_TRI 0
+#define PUSH_0_IRQ -1
+#define PUSH_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PUSH_0_IRQ_TYPE "NONE"
+#define PUSH_0_NAME "/dev/push_0"
+#define PUSH_0_RESET_VALUE 0
+#define PUSH_0_SPAN 16
+#define PUSH_0_TYPE "altera_avalon_pio"
+
+
+/*
  * sw_0 configuration
  *
  */
@@ -460,18 +541,45 @@
 
 
 /*
+ * sw_1 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_sw_1 altera_avalon_pio
+#define SW_1_BASE 0x41090
+#define SW_1_BIT_CLEARING_EDGE_REGISTER 0
+#define SW_1_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SW_1_CAPTURE 0
+#define SW_1_DATA_WIDTH 10
+#define SW_1_DO_TEST_BENCH_WIRING 0
+#define SW_1_DRIVEN_SIM_VALUE 0
+#define SW_1_EDGE_TYPE "NONE"
+#define SW_1_FREQ 50000000
+#define SW_1_HAS_IN 1
+#define SW_1_HAS_OUT 0
+#define SW_1_HAS_TRI 0
+#define SW_1_IRQ -1
+#define SW_1_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SW_1_IRQ_TYPE "NONE"
+#define SW_1_NAME "/dev/sw_1"
+#define SW_1_RESET_VALUE 0
+#define SW_1_SPAN 16
+#define SW_1_TYPE "altera_avalon_pio"
+
+
+/*
  * sysid_qsys_0 configuration
  *
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
-#define SYSID_QSYS_0_BASE 0x41000
+#define SYSID_QSYS_0_BASE 0x41078
 #define SYSID_QSYS_0_ID -559038737
 #define SYSID_QSYS_0_IRQ -1
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1734204014
+#define SYSID_QSYS_0_TIMESTAMP 1734551398
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */
