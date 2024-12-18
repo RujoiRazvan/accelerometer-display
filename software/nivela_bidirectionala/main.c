@@ -25,7 +25,7 @@ int main()
 	static int state_x = 0;
 	static int state_y = 0;
 	int filtered_x, filtered_y;
-	int y_inclination, x_sensibility = 86;
+	alt_32 y_inclination, x_sensibility = 86, xOffset = 0, yOffset = 0;
 	while(1)
 	{
 		alt_up_accelerometer_spi_read_x_axis(accelerometer_device, &x);
@@ -33,11 +33,18 @@ int main()
 
 		alt_up_accelerometer_spi_read_y_axis(accelerometer_device, &y);
 		filtered_y = applyHysteresis(y, state_y, HYSTERESIS_THRESHOLD);
+	    if (!IORD_ALTERA_AVALON_PIO_DATA(PUSH_0_BASE))
+	    {
+	    	CalibrateSensor(accelerometer_device, &xOffset, &yOffset);
+	    }
+	    filtered_x -= xOffset;
+	    filtered_y -= yOffset;
 		//printf("x: %d  y: %d", filtered_x, filtered_y);
 		x = (filtered_x * 6) / (2 * x_sensibility);
 		x += 2;
 		x = (x < 0) ? 0 : (x >= 6) ? 5 : x;
-		if (IORD_ALTERA_AVALON_PIO_DATA(SW_0_BASE)) {
+		if (IORD_ALTERA_AVALON_PIO_DATA(SW_0_BASE))
+		{
 		        y_inclination = (getAdcValue(adc_device) >> 4);
 		        if (IORD_ALTERA_AVALON_PIO_DATA(SW_1_BASE))
 		        {
@@ -49,9 +56,12 @@ int main()
 		        {
 		        	x_sensibility = 86;
 		        }
-		    } else {
+		}
+		else
+		{
 		        y_inclination = Y_INCLINATION;
-		    }
+		}
+
 		//printf("adc value: %d \r\n", getAdcValue(adc_device));
 		if (filtered_y > y_inclination)
 		{
