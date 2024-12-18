@@ -1,5 +1,5 @@
 Flow report for nivela_bidir
-Sat Dec 14 21:50:32 2024
+Wed Dec 18 22:01:06 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sat Dec 14 21:50:20 2024          ;
+; Flow Status                        ; Successful - Wed Dec 18 22:00:58 2024          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; nivela_bidir                                   ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                           ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C7G                                 ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 4,191 / 49,760 ( 8 % )                         ;
-;     Total combinational functions  ; 3,228 / 49,760 ( 6 % )                         ;
-;     Dedicated logic registers      ; 2,251 / 49,760 ( 5 % )                         ;
-; Total registers                    ; 2251                                           ;
-; Total pins                         ; 186 / 360 ( 52 % )                             ;
+; Total logic elements               ; 4,309 / 49,760 ( 9 % )                         ;
+;     Total combinational functions  ; 3,293 / 49,760 ( 7 % )                         ;
+;     Dedicated logic registers      ; 2,261 / 49,760 ( 5 % )                         ;
+; Total registers                    ; 2261                                           ;
+; Total pins                         ; 185 / 360 ( 51 % )                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 1,061,120 / 1,677,312 ( 63 % )                 ;
 ; Embedded Multiplier 9-bit elements ; 6 / 288 ( 2 % )                                ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/14/2024 21:48:24 ;
+; Start date & time ; 12/18/2024 21:59:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; nivela_bidir        ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+--------------------------------------------------------------------+---------------+----------------------+------------+
 ; Assignment Name                     ; Value                                                              ; Default Value ; Entity Name          ; Section Id ;
 +-------------------------------------+--------------------------------------------------------------------+---------------+----------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 9447190458696.173420570412960                                      ; --            ; --                   ; --         ;
+; COMPILER_SIGNATURE_ID               ; 9447190458696.173455196321792                                      ; --            ; --                   ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                 ; --            ; --                   ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                                  ; --            ; --                   ; --         ;
 ; MISC_FILE                           ; cpu_system_nios2/synthesis/../cpu_system_nios2.cmp                 ; --            ; --                   ; --         ;
@@ -91,7 +91,7 @@ https://fpgasoftware.intel.com/eula.
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                       ; --            ; --                   ; --         ;
 ; SLD_FILE                            ; cpu_system_nios2/synthesis/cpu_system_nios2.regmap                 ; --            ; --                   ; --         ;
 ; SLD_FILE                            ; cpu_system_nios2/synthesis/cpu_system_nios2.debuginfo              ; --            ; --                   ; --         ;
-; SLD_INFO                            ; QSYS_NAME cpu_system_nios2 HAS_SOPCINFO 1 GENERATION_ID 1734204014 ; --            ; cpu_system_nios2     ; --         ;
+; SLD_INFO                            ; QSYS_NAME cpu_system_nios2 HAS_SOPCINFO 1 GENERATION_ID 1734551398 ; --            ; cpu_system_nios2     ; --         ;
 ; SOPCINFO_FILE                       ; cpu_system_nios2/synthesis/../../cpu_system_nios2.sopcinfo         ; --            ; --                   ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                                 ; --            ; --                   ; --         ;
 ; TOP_LEVEL_ENTITY                    ; DE10_LITE_Golden_Top                                               ; nivela_bidir  ; --                   ; --         ;
@@ -103,11 +103,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:53     ; 1.0                     ; 5029 MB             ; 00:01:27                           ;
-; Fitter               ; 00:00:48     ; 1.5                     ; 5857 MB             ; 00:01:29                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4760 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:10     ; 2.3                     ; 4929 MB             ; 00:00:21                           ;
-; Total                ; 00:01:56     ; --                      ; --                  ; 00:03:22                           ;
+; Analysis & Synthesis ; 00:00:45     ; 1.0                     ; 5044 MB             ; 00:01:12                           ;
+; Fitter               ; 00:00:39     ; 1.5                     ; 5864 MB             ; 00:01:14                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4744 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:07     ; 2.3                     ; 4926 MB             ; 00:00:14                           ;
+; Total                ; 00:01:35     ; --                      ; --                  ; 00:02:44                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
