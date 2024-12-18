@@ -15,6 +15,9 @@
 #include <altera_up_avalon_accelerometer_spi.h>
 #include <altera_up_avalon_adc.h>
 
+#define max(a, b) ((a) > (b) ? (a) : (b))
+#define DIV_3941(value) (((value) * 17) >> 16)
+
 
 #define HEX_BASE_ADDR  HEX_0_BASE
 #define HEX_OFFSET     0x10

@@ -135,19 +135,23 @@ module DE10_LITE_Golden_Top(
 //=======================================================
 
 cpu_system_nios2 u0 (
-	.clk_clk                                       (MAX10_CLK1_50),               //		clk.clk
-	.reset_reset_n                                 (KEY[0]       ),               //		reset.reset_n
-	.hex_5_external_connection_export              (HEX5			 ),              	//		hex_5_external_connection.export
-	.hex_0_external_connection_export              (HEX0			 ),              	//		hex_0_external_connection.export
-	.hex_1_external_connection_export              (HEX1			 ),              	//		hex_1_external_connection.export
-	.hex_2_external_connection_export              (HEX2			 ),              	//		hex_2_external_connection.export
-	.hex_3_external_connection_export              (HEX3			 ),              	//		hex_3_external_connection.export
-	.hex_4_external_connection_export              (HEX4			 ),              	//		hex_4_external_connection.export
-	.sw_0_external_connection_export               (SW			    ),              	//		sw_0_external_connection.export
+	.clk_clk                                       	(MAX10_CLK1_50	),             //		clk.clk
+	.reset_reset_n                                 	(KEY[0]       	), 	         //		reset.reset_n
+	.hex_5_external_connection_export              	(HEX5			 	),            	//		hex_5_external_connection.export
+	.hex_0_external_connection_export              	(HEX0			 	),            	//		hex_0_external_connection.export
+	.hex_1_external_connection_export              	(HEX1			 	),            	//		hex_1_external_connection.export
+	.hex_2_external_connection_export              	(HEX2			 	),            	//		hex_2_external_connection.export
+	.hex_3_external_connection_export              	(HEX3			 	),            	//		hex_3_external_connection.export
+	.hex_4_external_connection_export              	(HEX4			 	),            	//		hex_4_external_connection.export
+	.sw_0_external_connection_export               	(SW[0]			),		         //		sw_0_external_connection.export
 	.accelerometer_spi_0_external_interface_I2C_SDAT      (GSENSOR_SDI),      		//		accelerometer_spi_0_external_interface.I2C_SDAT
    .accelerometer_spi_0_external_interface_I2C_SCLK      (GSENSOR_SCLK),     	 	//		I2C_SCLK
    .accelerometer_spi_0_external_interface_G_SENSOR_CS_N (GSENSOR_CS_N), 			//		G_SENSOR_CS_N
-   .accelerometer_spi_0_external_interface_G_SENSOR_INT  (GSENSOR_INT[1])  		//		G_SENSOR_INT
+   .accelerometer_spi_0_external_interface_G_SENSOR_INT  (GSENSOR_INT[1]),  		//		G_SENSOR_INT
+	.sw_1_external_connection_export					   (SW[1]		 	),					// 	Switch 1
+	.push_0_external_connection_export					(KEY[1]			),					// 	Push Button1
+	.led_0_external_connection_export					(LEDR[0]			),					// 	LED 0
+	.led_1_external_connection_export					(LEDR[1]			)					// 	LED 1
 	
 );
 endmodule
